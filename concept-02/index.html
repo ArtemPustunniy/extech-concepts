@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЭксТехСервис — что сломалось? Ремонт спецтехники в Сыктывкаре · Концепт 02</title>
+<meta name="description" content="Опишите технику и неисправность — подготовим предварительный расчёт ремонта. Экскаваторы, погрузчики, гидронасосы, редукторы хода, распределители, двигатели. Сыктывкар.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/common.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21 16.5v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 3.7 2 2 0 0 1 3.1 1.5h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.1 9.4a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <!-- иконки техники и узлов: нарисованы для концепта -->
+    <symbol id="t-excavator" viewBox="0 0 32 32"><rect x="2.5" y="23" width="18" height="5.5" rx="2.75"/><path d="M5 23v-5h11l2 5"/><path d="M8 18v-6h5l1.5 6"/><path d="M17 18 23.5 7.5 29 16"/><path d="M26.5 14.5h3.5l-1 4h-3.5Z"/></symbol>
+    <symbol id="t-loader" viewBox="0 0 32 32"><circle cx="8" cy="25" r="3.5"/><circle cx="20" cy="25" r="3.5"/><path d="M4 22v-7h14v7"/><path d="M10 15V9h6l1 6"/><path d="M18 17h5l3 4"/><path d="M25 18.5h5.5l-1 6H24Z"/></symbol>
+    <symbol id="t-backhoe" viewBox="0 0 32 32"><circle cx="10" cy="25" r="3.5"/><circle cx="21" cy="25" r="3"/><path d="M6 22v-7h15v7"/><path d="M11 15V9h6l1 6"/><path d="M21 17h4l3 4"/><path d="M26.5 18.5H31l-1 5h-4"/><path d="M6 17 2.5 9.5 1 15"/></symbol>
+    <symbol id="t-pump" viewBox="0 0 32 32"><circle cx="16" cy="16" r="9"/><circle cx="16" cy="16" r="3"/><path d="M16 4V2M16 30v-2M2 16h2M28 16h2"/><path d="M11 10.5 7 6.5M21 21.5l4 4"/></symbol>
+    <symbol id="t-gear" viewBox="0 0 32 32"><path d="M16 4.5 18.5 7l3.5-.8.8 3.5L26 12l-1.2 3.4L26 19l-3.2 2.3-.8 3.5-3.5-.8L16 27.5 13.5 24l-3.5.8-.8-3.5L6 19l1.2-3.6L6 12l3.2-2.3.8-3.5 3.5.8Z"/><circle cx="16" cy="16" r="4"/></symbol>
+    <symbol id="t-valve" viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="14" rx="3"/><path d="M10 9V5M16 9V5M22 9V5M10 23v4M22 23v4"/><path d="M9 16h14"/></symbol>
+    <symbol id="t-engine" viewBox="0 0 32 32"><path d="M6 12h17l4 4v8H6Z"/><path d="M11 12V8h7v4"/><path d="M2 16v6M6 19H2"/><path d="M27 18h3"/><circle cx="14" cy="18" r="2"/></symbol>
+    <symbol id="t-parts" viewBox="0 0 32 32"><path d="m16 4 10 6v12l-10 6-10-6V10Z"/><circle cx="16" cy="16" r="4"/></symbol>
+    <symbol id="t-question" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M12.5 12.5a3.5 3.5 0 1 1 5 3.2c-1 .5-1.5 1.3-1.5 2.3v1"/><circle cx="16" cy="23" r=".6"/></symbol>
+    <symbol id="t-base" viewBox="0 0 32 32"><path d="M4 27V12l12-8 12 8v15"/><path d="M10 27v-9h12v9"/></symbol>
+    <symbol id="t-van" viewBox="0 0 32 32"><path d="M2 9h17v13H2Z"/><path d="M19 13h6l5 5v4H19"/><circle cx="8" cy="24" r="2.5"/><circle cx="24" cy="24" r="2.5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">К содержимому</a>
+
+<header class="top">
+  <div class="wrap top__in">
+    <a class="logo" href="#main" aria-label="ЭксТехСервис — в начало">
+      <svg class="logo__ico" aria-hidden="true"><use href="#t-gear"/></svg>ЭксТехСервис
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Что чиним</a>
+      <a href="#process">Как работаем</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--soft btn--sm top__call" href="#request" data-contact-link="phone"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span>Позвонить</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="chip"><svg class="ico ico--sm" aria-hidden="true"><use href="#i-pin"/></svg>Сыктывкар · ремонт спецтехники</p>
+        <h1 class="hero__title">Что <span class="hl">сломалось</span>?</h1>
+        <p class="hero__lead">Ответьте на четыре вопроса о технике и неисправности — подготовим предварительный расчёт ремонта. Удобнее голосом — позвоните.</p>
+        <ul class="perks">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Выезд на объект</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Своя ремонтная база</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Гарантия на работы</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg>Частным лицам и компаниям</li>
+        </ul>
+        <p class="hero__hours"><svg class="ico ico--sm" aria-hidden="true"><use href="#i-clock"/></svg><span>Пн–Пт 09:00–18:00 · <span data-schedule-status="short"></span></span></p>
+      </div>
+
+      <div class="wizard" id="request">
+        <div class="wizard__head">
+          <p class="wizard__title">Запросить предварительный расчёт</p>
+          <p class="wizard__step">Шаг <b data-step-num>1</b> из 4</p>
+        </div>
+        <div class="wizard__progress" aria-hidden="true"><span data-progress></span></div>
+
+        <form class="wizard__form" novalidate>
+          <fieldset class="step is-active" data-step="1">
+            <legend>Какая техника?</legend>
+            <div class="tiles">
+              <label class="tile"><input type="radio" name="machine" value="Экскаватор"><span><svg aria-hidden="true"><use href="#t-excavator"/></svg>Экскаватор</span></label>
+              <label class="tile"><input type="radio" name="machine" value="Погрузчик"><span><svg aria-hidden="true"><use href="#t-loader"/></svg>Погрузчик</span></label>
+              <label class="tile"><input type="radio" name="machine" value="Экскаватор-погрузчик"><span><svg aria-hidden="true"><use href="#t-backhoe"/></svg>Экскаватор-погрузчик</span></label>
+              <label class="tile"><input type="radio" name="machine" value="Отдельный агрегат"><span><svg aria-hidden="true"><use href="#t-parts"/></svg>Отдельный агрегат</span></label>
+            </div>
+            <p class="step__error" data-step-error role="alert"></p>
+          </fieldset>
+
+          <fieldset class="step" data-step="2" hidden>
+            <legend>Что ремонтируем?</legend>
+            <div class="tiles tiles--3">
+              <label class="tile"><input type="radio" name="unit" value="Гидравлический насос"><span><svg aria-hidden="true"><use href="#t-pump"/></svg>Гидронасос</span></label>
+              <label class="tile"><input type="radio" name="unit" value="Редуктор хода"><span><svg aria-hidden="true"><use href="#t-gear"/></svg>Редуктор хода</span></label>
+              <label class="tile"><input type="radio" name="unit" value="Гидрораспределитель"><span><svg aria-hidden="true"><use href="#t-valve"/></svg>Распределитель</span></label>
+              <label class="tile"><input type="radio" name="unit" value="Двигатель"><span><svg aria-hidden="true"><use href="#t-engine"/></svg>Двигатель</span></label>
+              <label class="tile"><input type="radio" name="unit" value="Запасные части"><span><svg aria-hidden="true"><use href="#t-parts"/></svg>Запчасти</span></label>
+              <label class="tile"><input type="radio" name="unit" value="Нужна диагностика"><span><svg aria-hidden="true"><use href="#t-question"/></svg>Не знаю</span></label>
+            </div>
+            <p class="step__error" data-step-error role="alert"></p>
+          </fieldset>
+
+          <fieldset class="step" data-step="3" hidden>
+            <legend>Где техника и что случилось?</legend>
+            <div class="tiles tiles--2">
+              <label class="tile tile--row"><input type="radio" name="place" value="Привезём на базу" checked><span><svg aria-hidden="true"><use href="#t-base"/></svg>Привезём на базу</span></label>
+              <label class="tile tile--row"><input type="radio" name="place" value="Нужен выезд"><span><svg aria-hidden="true"><use href="#t-van"/></svg>Нужен выезд</span></label>
+            </div>
+            <p class="symptoms__label">Что заметили? <span>можно несколько</span></p>
+            <div class="symptoms">
+              <label class="pill"><input type="checkbox" name="symptom" value="Слабая гидравлика"><span>Слабая гидравлика</span></label>
+              <label class="pill"><input type="checkbox" name="symptom" value="Течь масла"><span>Течь масла</span></label>
+              <label class="pill"><input type="checkbox" name="symptom" value="Посторонний шум"><span>Посторонний шум</span></label>
+              <label class="pill"><input type="checkbox" name="symptom" value="Не заводится"><span>Не заводится</span></label>
+              <label class="pill"><input type="checkbox" name="symptom" value="Перегрев"><span>Перегрев</span></label>
+            </div>
+            <label class="visually-hidden" for="w-comment">Комментарий</label>
+            <textarea id="w-comment" name="comment" rows="2" placeholder="Марка, модель, что происходит — по желанию"></textarea>
+          </fieldset>
+
+          <fieldset class="step" data-step="4" hidden>
+            <legend>Куда прислать расчёт?</legend>
+            <div class="field">
+              <label for="w-name">Имя</label>
+              <input id="w-name" name="name" autocomplete="name" data-rule="name" placeholder="Как к вам обращаться">
+              <p class="field__error" data-error-for="name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="w-phone">Телефон</label>
+              <input id="w-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" data-rule="phone" placeholder="+7 (900) 000-00-00">
+              <p class="field__error" data-error-for="phone" role="alert"></p>
+            </div>
+            <label class="check">
+              <input type="checkbox" name="consent" data-rule="consent">
+              <span>Согласен на обработку персональных данных для ответа на заявку</span>
+            </label>
+            <p class="field__error" data-error-for="consent" role="alert"></p>
+          </fieldset>
+
+          <div class="wizard__nav">
+            <button type="button" class="btn btn--ghost" data-back hidden><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg>Назад</button>
+            <button type="button" class="btn btn--primary" data-next>Дальше<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+            <button type="submit" class="btn btn--primary" data-submit hidden>Получить расчёт<svg class="ico" aria-hidden="true"><use href="#i-check"/></svg></button>
+          </div>
+        </form>
+
+        <div class="success" data-success hidden tabindex="-1">
+          <span class="success__ico"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+          <p class="success__title">Заявка готова</p>
+          <p class="success__summary" data-summary></p>
+          <p class="success__note">Демонстрационная форма: в рабочей версии заявка уйдёт в MAX или на почту, и специалист перезвонит.</p>
+          <button type="button" class="btn btn--ghost" data-again>Новая заявка</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title" id="services-title">Чиним технику и её «органы»</h2>
+        <p class="sec-sub">Не обязательно знать, что именно сломалось: выберите похожее — подскажем на диагностике.</p>
+      </div>
+      <div class="cards">
+        <article class="card card--machine">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-excavator"/></svg>
+          <h3>Экскаваторы</h3>
+          <p>Гидронасосы, распределители, редукторы хода, двигатель.</p>
+          <button type="button" class="card__btn" data-pick='{"machine":"Экскаватор"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card card--machine">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-loader"/></svg>
+          <h3>Погрузчики</h3>
+          <p>Ремонт и обслуживание основных систем.</p>
+          <button type="button" class="card__btn" data-pick='{"machine":"Погрузчик"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card card--machine">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-backhoe"/></svg>
+          <h3>Экскаваторы-погрузчики</h3>
+          <p>Обе рабочие стороны, гидравлика и силовая часть.</p>
+          <button type="button" class="card__btn" data-pick='{"machine":"Экскаватор-погрузчик"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-pump"/></svg>
+          <h3>Гидравлические насосы</h3>
+          <p class="card__signs"><b>Частые признаки:</b> медленная работа стрелы, падение давления, шум.</p>
+          <button type="button" class="card__btn" data-pick='{"unit":"Гидравлический насос"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-gear"/></svg>
+          <h3>Редукторы хода</h3>
+          <p class="card__signs"><b>Частые признаки:</b> гул, течь масла, техника уводит в сторону.</p>
+          <button type="button" class="card__btn" data-pick='{"unit":"Редуктор хода"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-valve"/></svg>
+          <h3>Распределители</h3>
+          <p class="card__signs"><b>Частые признаки:</b> рывки, не работает секция, оборудование опускается само.</p>
+          <button type="button" class="card__btn" data-pick='{"unit":"Гидрораспределитель"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-engine"/></svg>
+          <h3>Двигатели</h3>
+          <p class="card__signs"><b>Частые признаки:</b> не заводится, дымит, теряет мощность.</p>
+          <button type="button" class="card__btn" data-pick='{"unit":"Двигатель"}'>Рассчитать<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+        <article class="card card--accent">
+          <svg class="card__ico" aria-hidden="true"><use href="#t-parts"/></svg>
+          <h3>Запасные части</h3>
+          <p>Для ремонта техники и агрегатов — наличие уточняйте по заявке.</p>
+          <button type="button" class="card__btn" data-pick='{"unit":"Запасные части"}'>Запросить<svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="sec-title" id="process-title">Как всё проходит</h2>
+        <p class="sec-sub">Без сюрпризов: стоимость согласуем до начала ремонта.</p>
+      </div>
+      <ol class="journey">
+        <li><span>1</span><h3>Заявка</h3><p>Здесь на сайте или по телефону.</p></li>
+        <li><span>2</span><h3>Диагностика</h3><p>На нашей базе или с выездом к технике.</p></li>
+        <li><span>3</span><h3>Расчёт</h3><p>Называем стоимость и согласуем.</p></li>
+        <li><span>4</span><h3>Ремонт</h3><p>Опытные специалисты на своей базе.</p></li>
+        <li><span>5</span><h3>Гарантия</h3><p>На выполненные работы.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="why" aria-labelledby="why-title">
+    <div class="wrap why">
+      <div class="why__feature">
+        <svg class="why__van" viewBox="0 0 220 120" aria-hidden="true">
+          <rect x="10" y="28" width="120" height="62" rx="10"/>
+          <path d="M130 46h42l30 28v16h-72Z"/>
+          <path class="why__window" d="M140 54h28l18 18h-46Z"/>
+          <circle class="why__wheel" cx="50" cy="94" r="15"/><circle class="why__wheel" cx="168" cy="94" r="15"/>
+          <path class="why__stripe" d="M10 66h120"/>
+          <path class="why__tool" d="M40 46l14 14m0-14-14 14"/>
+        </svg>
+        <h2 class="sec-title" id="why-title">Приедем к технике</h2>
+        <p>Если экскаватор или погрузчик нельзя привезти, специалист выедет на объект. Сложный ремонт агрегатов — на нашей ремонтной базе.</p>
+      </div>
+      <ul class="why__list">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Опытные специалисты</h3><p>Гидравлика, редукторы хода, двигатели.</p></div></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Собственная ремонтная база</h3><p>Ремонт агрегатов в Сыктывкаре.</p></div></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Гарантия на работы</h3><p>Срок и условия — <span class="todo">уточнить у клиента</span></p></div></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><div><h3>Приемлемые цены</h3><p>Предварительный расчёт до начала работ.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq">
+      <h2 class="sec-title" id="faq-title">Частые вопросы</h2>
+      <div class="faq__list">
+        <details open>
+          <summary>С какой техникой работаете?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Экскаваторы, погрузчики, экскаваторы-погрузчики и их узлы: гидронасосы, редукторы хода, распределители, двигатели. В брифе упомянуты марки Hitachi, JCB, Volvo, Hyundai — полный список <span class="todo">уточнить у клиента</span>.</p>
+        </details>
+        <details>
+          <summary>Можно вызвать мастера на объект?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Да, есть выездной сервис. Технику или агрегат можно и привезти на нашу ремонтную базу.</p>
+        </details>
+        <details>
+          <summary>Сколько стоит ремонт?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Зависит от техники и неисправности. Оставьте заявку — подготовим предварительный расчёт.</p>
+        </details>
+        <details>
+          <summary>Есть гарантия?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Да, на выполненные работы. Срок и условия — <span class="todo">уточнить у клиента</span>.</p>
+        </details>
+        <details>
+          <summary>Работаете с частными лицами?<svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Да — и с частными лицами, и с компаниями.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts" aria-labelledby="contacts-title">
+    <div class="wrap">
+      <div class="contact-card">
+        <div class="contact-card__info">
+          <h2 class="sec-title" id="contacts-title">Ждём вас и вашу технику</h2>
+          <p class="contact-card__addr"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Сыктывкар, м.&nbsp;Дырнос,&nbsp;98</p>
+          <p class="contact-card__hours"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span>Пн–Пт 09:00–18:00 · <span data-schedule-status="short"></span></span></p>
+          <ul class="contact-card__links">
+            <li><span>Телефон</span><a href="#request" data-contact-link="phone" data-contact="phone"></a></li>
+            <li><span>Почта</span><a href="#request" data-contact-link="email" data-contact="email"></a></li>
+            <li><span>MAX</span><a href="#request" data-contact-link="max" data-contact="max"></a></li>
+          </ul>
+          <div class="contact-card__actions">
+            <a class="btn btn--primary" href="#request" data-contact-link="phone"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+            <a class="btn btn--ghost" href="https://yandex.ru/maps/?text=%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80%2C%20%D0%BC.%20%D0%94%D1%8B%D1%80%D0%BD%D0%BE%D1%81%2C%2098" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
+          </div>
+        </div>
+        <svg class="contact-card__map" viewBox="0 0 400 320" aria-hidden="true">
+          <rect width="400" height="320" rx="24"/>
+          <path class="road road--big" d="M-10 220 C 90 200 140 120 260 110 S 380 60 420 40"/>
+          <path class="road" d="M60 -10 C 80 80 120 160 110 330"/>
+          <path class="road" d="M200 330 C 220 250 300 210 420 200"/>
+          <path class="road road--thin" d="M-10 80 C 80 90 160 60 230 -10"/>
+          <circle class="pin-pulse" cx="250" cy="112" r="26"/>
+          <path class="pin" d="M250 132s20-17 20-33a20 20 0 0 0-40 0c0 16 20 33 20 33Z"/>
+          <circle class="pin-dot" cx="250" cy="99" r="7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo" href="#main"><svg class="logo__ico" aria-hidden="true"><use href="#t-gear"/></svg>ЭксТехСервис</a>
+    <p>Концепт 02 из 3 · «Что сломалось?». Данные о компании — из брифа; название уточняется перед релизом. Телефон, почта и MAX не предоставлены. Иконки и иллюстрации нарисованы для концепта.</p>
+    <nav class="foot__nav" aria-label="Другие концепты"><a href="../">Все концепты</a><a href="../concept-01/">Концепт 01</a><a href="../concept-03/">Концепт 03</a></nav>
+  </div>
+</footer>
+
+<script src="../shared/common.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Общая разметка служебных элементов. Цвета берутся из переменных концепта. */
+.ets-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(10, 12, 16, 0.55);
+}
+.ets-notice__box {
+  width: min(420px, 100%);
+  padding: 24px;
+  border-radius: var(--notice-radius, 12px);
+  background: var(--notice-bg, #fff);
+  color: var(--notice-ink, #111);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6);
+  font-family: var(--notice-font, inherit);
+}
+.ets-notice__title { margin: 0 0 8px; font-weight: 700; font-size: 18px; }
+.ets-notice__text { margin: 0 0 20px; line-height: 1.5; }
+.ets-notice__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.ets-notice__primary,
+.ets-notice__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: var(--notice-btn-radius, 8px);
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ets-notice__primary { background: var(--notice-accent, #111); color: var(--notice-accent-ink, #fff); border: 0; }
+.ets-notice__close { background: transparent; color: inherit; border: 1px solid currentColor; }
+
+.is-placeholder { opacity: 0.72; }
+[hidden] { display: none !important; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

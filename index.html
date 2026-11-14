@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЭксТехСервис — три концепции лендинга</title>
+<meta name="description" content="Тестовое задание: три разные концепции одностраничного сайта для сервиса по ремонту спецтехники «ЭксТехСервис».">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f4f4f1; --card: #fff; --ink: #16181b; --muted: #676b70; --line: #e2e2dc; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 "Golos Text", system-ui, sans-serif; overflow-x: clip; }
+  .wrap { max-width: 1240px; margin-inline: auto; padding: clamp(32px, 6vw, 72px) clamp(16px, 4vw, 40px); }
+  .eyebrow { margin: 0; font-size: 14px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  h1 { margin: 12px 0 0; font-size: clamp(34px, 5vw, 60px); line-height: 1.05; letter-spacing: -.02em; }
+  .lead { max-width: 760px; margin: 18px 0 0; font-size: 19px; color: #3d4045; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: clamp(32px, 4vw, 56px); }
+  .card { display: flex; flex-direction: column; border-radius: 20px; overflow: hidden; background: var(--card); border: 1px solid var(--line); text-decoration: none; color: inherit; transition: transform .25s, box-shadow .25s; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 30px 60px -36px rgba(0, 0, 0, .45); }
+  .card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: #ddd; }
+  .card__body { display: grid; gap: 10px; padding: 22px; flex: 1; }
+  .card__no { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .card h2 { margin: 0; font-size: 26px; line-height: 1.15; letter-spacing: -.01em; }
+  .card p { margin: 0; color: #43474c; }
+  .card dl { margin: 6px 0 0; display: grid; gap: 4px; font-size: 15px; }
+  .card dt { display: inline; color: var(--muted); }
+  .card dd { display: inline; margin: 0; }
+  .card__open { margin-top: auto; padding-top: 10px; font-weight: 700; }
+  .notes { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; font-size: 15px; color: #43474c; }
+  .notes h3 { margin: 0 0 6px; font-size: 16px; color: var(--ink); }
+  .notes p { margin: 0; }
+  .notes a { color: var(--ink); }
+  @media (max-width: 960px) { .grid, .notes { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="eyebrow">Тестовое задание · «Бизнес компас»</p>
+  <h1>ЭксТехСервис: три концепции лендинга</h1>
+  <p class="lead">Ремонт и обслуживание спецтехники в Сыктывкаре. Один бриф — три самостоятельных решения для трёх сценариев: срочный звонок, подбор ремонта по шагам и разговор с инженером на языке узлов.</p>
+
+  <div class="grid">
+    <a class="card" href="concept-01/">
+      <img src="docs/thumb-01.png" alt="Первый экран концепта 01: тёмный индустриальный стиль, крупный заголовок «Вернём технику в работу» и экскаватор" width="1440" height="900">
+      <div class="card__body">
+        <span class="card__no">Концепт 01</span>
+        <h2>«Тяжёлая смена»</h2>
+        <p>Тёмный индустриальный стиль, сигнальный жёлтый, плакатная типографика и силуэт экскаватора.</p>
+        <dl><div><dt>Главное действие: </dt><dd>позвонить мастеру</dd></div><div><dt>Для кого: </dt><dd>техника встала, нужен ремонт</dd></div></dl>
+        <span class="card__open">Открыть →</span>
+      </div>
+    </a>
+    <a class="card" href="concept-02/">
+      <img src="docs/thumb-02.png" alt="Первый экран концепта 02: светлый дизайн, заголовок «Что сломалось?» и мастер заявки из четырёх шагов" width="1440" height="900">
+      <div class="card__body">
+        <span class="card__no">Концепт 02</span>
+        <h2>«Что сломалось?»</h2>
+        <p>Светлый и дружелюбный: первый экран — мастер заявки из четырёх вопросов вместо длинной формы.</p>
+        <dl><div><dt>Главное действие: </dt><dd>запросить расчёт по шагам</dd></div><div><dt>Для кого: </dt><dd>частники, которые не знают, что именно сломалось</dd></div></dl>
+        <span class="card__open">Открыть →</span>
+      </div>
+    </a>
+    <a class="card" href="concept-03/">
+      <img src="docs/thumb-03.png" alt="Первый экран концепта 03: инженерный чертёж экскаватора с позициями узлов на бумаге в клетку" width="1440" height="900">
+      <div class="card__body">
+        <span class="card__no">Концепт 03</span>
+        <h2>«Чертёж»</h2>
+        <p>Инженерная бумага, линии и пометки: экскаватор как чертёж с кликабельными узлами и спецификация работ.</p>
+        <dl><div><dt>Главное действие: </dt><dd>расчёт по конкретному узлу</dd></div><div><dt>Для кого: </dt><dd>компании и механики, говорящие на языке узлов</dd></div></dl>
+        <span class="card__open">Открыть →</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="notes">
+    <div><h3>Факты — только из брифа</h3><p>Телефон, почта, MAX, цены, сроки и условия гарантии не предоставлены — помечены как «уточнить у клиента». Кнопки звонка подключаются одной правкой в <code>shared/common.js</code>.</p></div>
+    <div><h3>Иллюстрации и шрифты</h3><p>Все иллюстрации и иконки — векторные, нарисованы для концептов. Шрифты — Google Fonts по лицензии SIL Open Font License.</p></div>
+    <div><h3>Исходники и отчёт</h3><p><a href="https://github.com/ArtemPustunniy/extech-concepts">Репозиторий на GitHub</a> — код, README и короткий отчёт о работе.</p></div>
+  </div>
+</main>
+</body>
+</html>
